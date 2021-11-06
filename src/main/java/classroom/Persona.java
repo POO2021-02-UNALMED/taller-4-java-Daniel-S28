@@ -30,13 +30,13 @@ public class Persona {
 
     Persona(String nombre) {
         this.nombre = "";
-        this.cedula = 1;
-        totalPersonas++;
+        this.cedula = 1;		//Defini que la cedula fuera 1 porque ese es el valor que se necesita
+        totalPersonas++;		//printear cuando solo se define una persona por el nombre
     }
     
     Persona(){
-    	this(0,"NN");
-    }
+    	this(0,"NN");		//Este constructor apunta al otro y establece el valor de cédula 00 y NN
+    }						//cuando se crea un objeto persona sin pasar parámetos
     
     long getCedula() {
         return cedula;

@@ -9,11 +9,11 @@ public class Asignatura {
 
     Asignatura() {
         this("Sin nombre");
-        this.codigoExterno=0;
-    }
+        //this(0);		//acá no se puede hacer this(0) porque pa llamar al constructor debe ser en la primera línea
+    }					//se deja solo el de arriba para que entre a la linea 19
 
     /*Asignatura(int codigoInterno) {
-        this("Sin nombre", codigoInterno, 0);
+        this("Sin nombre", codigoInterno, 0);	//codigo interno nunca se usa entonces se quita
     }*/
 
     Asignatura(int codigoExterno) {
@@ -37,7 +37,7 @@ public class Asignatura {
     }
 
     /*void cambiarDatos(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
+        this.codigoInterno = codigoInterno;		//codigo interno no se usa entonces se quita
     }*/
 
     void cambiarDatos(int codigoExterno) {
